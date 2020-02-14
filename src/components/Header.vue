@@ -24,7 +24,7 @@
     @media (max-width: 960px)
         .header
             &__title
-                font-size: 9vmax
+                font-size: 8vmax
             &__subtitle
                 font-size: 3vmax
 </style>
