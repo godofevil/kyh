@@ -93,11 +93,11 @@
         &__image
             align-self: center
         &__details
-            font-size: 1.2rem
+            font-size: 1.1rem
             color: darken($grey, 30%)
             & span
                 color: #000
-                font-size: 1.4rem
+                font-size: 1.2rem
 
     @media (max-width: 960px)
         .controls

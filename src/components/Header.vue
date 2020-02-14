@@ -21,4 +21,10 @@
             text-transform: uppercase
             font-size: 1vmax
             color: #grey
+    @media (max-width: 960px)
+        .header
+            &__title
+                font-size: 9vmax
+            &__subtitle
+                font-size: 3vmax
 </style>
