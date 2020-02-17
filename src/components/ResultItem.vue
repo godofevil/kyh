@@ -3,8 +3,8 @@
         .person__block.person__collapsed
             .person__name {{ person.name }}
             .person__showmore(@click="showMore = !showMore")
-                span(v-if="!showMore") +
-                span(v-else) -
+                span(v-if="!showMore") ➕
+                span(v-else) ➖
         transition-group.person__block.person__expanded(name="fade")
             template(v-if="showMore")
                 .person__image(:key="person.name")
@@ -45,11 +45,6 @@
         },
         props: {
             person: {}
-        },
-        methods: {
-            onImageLoad() {
-
-            }
         },
         components: {
             Loader

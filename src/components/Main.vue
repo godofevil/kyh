@@ -33,8 +33,10 @@
                     }
                 }
                 this.searchRequest && this.search();
-            },
-            search() {
+            }
+        },
+        computed: {
+            search: function() {
                 this.showError = false;
                 let regexp = new RegExp(`${this.searchRequest.trim()}`, 'gi');
                 this.searchResult = this.heroDB.filter(person => person.name.match(regexp));
